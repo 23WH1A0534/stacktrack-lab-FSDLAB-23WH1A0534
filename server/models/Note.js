@@ -20,5 +20,5 @@ const noteSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
-
+//update note.js
 module.exports = mongoose.model('Note', noteSchema);
