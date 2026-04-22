@@ -15,7 +15,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const API = 'http://localhost:5004/api/notes';
-
+//sample test
   useEffect(() => {
     fetchNotes()
       .then((data) => {
