@@ -17,16 +17,15 @@ function App() {
   const API = 'http://localhost:5004/api/notes';
 
   useEffect(() => {
-    // fetchNotes()
-    //   .then((data) => {
-    //     setNotes(data);
-    //     setLoading(false);
-    //   })
-    //   .catch((err) => {
-    //     setError(err.message);
-    //     setLoading(false);
-    //   });
-    get();
+    fetchNotes()
+      .then((data) => {
+        setNotes(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
   }, []);
 
   const get = async () => setNotes(await fetch(API).then(res => res.json()));
