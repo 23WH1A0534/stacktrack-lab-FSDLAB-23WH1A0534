@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
     return res.status(500).json({ error: 'Server error' });
   }
 });
-
+//updated notes.js
 module.exports = router;
 // const express = require('express');
 // const Note = require('../models/Note');
